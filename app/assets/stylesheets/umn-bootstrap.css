@@ -1,0 +1,67 @@
+header.umn-bootstrap { margin-top:10px; }
+header.umn-bootstrap ul { list-style:none;margin-top:0px; }
+header.umn-bootstrap li { display:inline;margin-left:10px; }
+header.umn-bootstrap div.umn-search { clear:both;background:url(bg_header.gif) repeat-x; }
+header.umn-bootstrap form { float:right; text-align:right; margin:17px 17px 0 0; }
+footer.umn-bootstrap {border-top:1px solid #ccc;padding-top:14px;margin-top:20px;}
+footer.umn-bootstrap p.umn-copyright { width:50%;}
+footer.umn-bootstrap div.umn-links { width:50%;float:right;text-align:right;}
+footer.umn-bootstrap div.umn-links p { text-align:right;margin-bottom:0; }
+footer.umn-bootstrap div.umn-links ul { list-style:none;margin-top:0; }
+footer.umn-bootstrap div.umn-links li { display:inline;margin-left:10px;white-space:nowrap;}
+.umn-bootstrap-content { min-height:480px;padding:0 20px; }
+header.umn-bootstrap form {
+  background:#ffcc33;
+  margin-top:13px;
+  padding:4px 4px 0px 4px;
+  padding:3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.jumbotron {
+
+  position: relative;
+  padding:10px 10px 10px 20px;
+  margin-bottom:20px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+
+  background: #333333; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #333333 0%, #666666 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#333333), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #333333 0%,#666666 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #333333 0%,#666666 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #333333 0%,#666666 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #333333 0%,#666666 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#666666',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+
+}
+.jumbotron h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+.jumbotron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(bs-docs-masthead-pattern.png) repeat center center;
+  opacity: .4;
+  opacity: .5;
+}
+

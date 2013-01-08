@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Faculty Roles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="umn-bootstrap">
+        <a href="#maincontent" class="hidden">Skip to Content</a>
+        <div class="pull-right">
+          <ul>
+            <li>Campuses:</li>
+            <li><a href="http://www.umn.edu">Twin Cities</a></li>
+            <li><a href="http://www.crk.umn.edu/">Crookston</a></li>
+            <li><a href="http://www.d.umn.edu/">Duluth</a></li>
+            <li><a href="http://www.morris.umn.edu/">Morris</a></li>
+            <li><a href="http://www.r.umn.edu/">Rochester</a></li>
+            <li><a href="http://www1.umn.edu/twincities/campuses.php">Other Locations</a></li>
+          </ul>
+        </div>
+        <div class="umn-search">
+          <a href="http://www.umn.edu/"><%= image_tag 'logo_uofm_D2D.gif', :alt => 'U of M system homepage' %></a>
+          <form action="http://search.umn.edu/tc/" method="get" class="form-inline">
+            <div class="input-append">
+              <input type="text" name="q" placeholder="Search Websites and People" />
+              <button class="btn" type="button">Search</button>
+            </div>
+          </form>
+        </div>
+      </header>
+
+      <div class="jumbotron">
+        <%= render :partial => 'umn_bootstrap/application_header' %>
+      </div>
+
+      <%= render :partial => 'umn_bootstrap/content' %>
+
+      <footer class="umn-bootstrap">
+        <div class="umn-links">
+          <p><%= render :partial => 'umn_bootstrap/contact' %></p>
+          <ul>
+            <li>Twin Cities:</li>
+            <li><a href="http://www1.umn.edu/pts/">Parking &amp; Transportation</a></li>
+            <li><a href="http://www.umn.edu/twincities/maps/index.html">Maps &amp; Directions</a></li>
+            <li><a href="http://www.directory.umn.edu/">Directories</a></li>
+            <li><a href="http://www.umn.edu/">U of MN</a></li>
+            <li><a href="http://www1.umn.edu/twincities/privacy/">Privacy</a></li>
+          </ul>
+        </div>
+        <p class="umn-copyright">
+          &copy; 2012 Regents of the University of Minnesota. All rights reserved.<br />
+          The University of Minnesota is an equal opportunity educator and employer.<br />
+          <%= render :partial => 'umn_bootstrap/version' %>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
