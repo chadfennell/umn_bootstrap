@@ -1,6 +1,10 @@
 # UmnBootstrapRails
 
-TODO: Write a gem description
+A set of University of Minnesota web templates for your Rails apps that uses the Twitter Bootstrap UI framework.
+
+## Why this exists / goals
+
+- TODO
 
 ## Installation
 
@@ -18,7 +22,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Add to your `app/assets/stylesheets/application.css` file:
+
+    *= require umn_bootstrap
+
+2. Add to your `app/assets/javascripts/application.js` file:
+
+    //= require umn_bootstrap
+
+3. Run the `twitter-bootstrap-rails` generator:
+
+    rails generate bootstrap:install less
+
+4. Choose a layout in `app/controllers/application_controller.rb`:
+
+    layout 'umn_bootstrap-fluid-sidenav'
+
+Other layouts:
+
+- TODO
+
+## Headers, footers, and other layout partials
+
+- TODO: how to include app header & other partials that the
+  umn_bootstrap layout may use.
 
 ## Contributing
 
