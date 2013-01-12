@@ -24,23 +24,31 @@ Or install it yourself as:
 
 1. Add to your `app/assets/stylesheets/application.css` file:
 
+    ```
     *= require umn_bootstrap
+    ```
 
 2. Add to your `app/assets/javascripts/application.js` file:
 
+    ```
     //= require umn_bootstrap
+    ```
 
 3. Run the `twitter-bootstrap-rails` generator:
 
+    ```
     rails generate bootstrap:install less
+    ```
 
 4. Choose a layout in `app/controllers/application_controller.rb`:
 
+    ```
     layout 'umn_bootstrap-fluid-sidenav'
+    ```
 
 Other layouts:
 
-- TODO
+- `umn_bootstrap-fixed-sidenav`
 
 ## Headers, footers, and other layout partials
 
