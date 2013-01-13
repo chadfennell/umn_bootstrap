@@ -1,11 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title><%= render :partial => 'layouts/umn_bootstrap/title' %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
+    <%= render :partial => 'layouts/umn_bootstrap/common/head' %>
   </head>
   <body>
     <div class="container">
@@ -13,12 +9,12 @@
       <%= render :partial => 'layouts/umn_bootstrap/common/header' %>
 
       <div class="jumbotron">
-        <%= render :partial => 'layouts/umn_bootstrap/application_header' %>
+        <%= render :partial => 'shared/umn_bootstrap/application_header' %>
       </div>
 
       <div class="row">
         <div class="span3">
-          <%= render :partial => 'layouts/umn_bootstrap/navigation' %>
+          <%= render :partial => 'shared/umn_bootstrap/navigation' %>
         </div>
         <div class="span9">
           <%= yield %>
@@ -30,6 +26,4 @@
     </div>
   </body>
 </html>
-
-
 

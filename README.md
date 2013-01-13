@@ -10,7 +10,7 @@ A set of University of Minnesota web templates for your Rails apps that uses the
 
 Add this line to your application's Gemfile:
 
-    gem 'umn_bootstrap_rails'
+    gem 'umn_bootstrap_rails', :git => 'git@github.umn.edu:asrweb/umn_bootstrap_rails'
 
 And then execute:
 
@@ -42,13 +42,17 @@ Or install it yourself as:
 
 4. Choose a layout in `app/controllers/application_controller.rb`:
 
-    ```
+    ```ruby
     layout 'umn_bootstrap-fluid-sidenav'
     ```
 
-Other layouts:
+    Other layouts:
 
-- `umn_bootstrap-fixed-sidenav`
+    ```
+    umn_bootstrap-fixed-sidenav
+    ```
+
+5. Supply some partials for your app layout
 
 ## Headers, footers, and other layout partials
 
