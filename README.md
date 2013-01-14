@@ -1,65 +1,68 @@
-# UmnBootstrapRails
+UMN Bootstrap for Rails
+=======================
 
-A set of University of Minnesota web templates for your Rails apps that uses the Twitter Bootstrap UI framework.
+A set of University of Minnesota web templates for your Rails apps implemented
+using the Twitter Bootstrap UI framework.
 
-## Why this exists / goals
+Why this exists
+---------------
 
-- TODO
+The goal of UMN Bootstrap is to implement the University of Minnesota
+tempalte using Twitter Bootstrap elements and markup. Doing so not only provides
+consistency between application style and header/footer style, but gives
+us access to a fantastic toolbox of well-thought-out layouts, grid
+system, and attractive UI elements. As responsible developers, let's stop
+wasting time endlessly tweaking designs, nudging pixels here and there,
+and start delivering business value!
 
-## Installation
+This Rails gem allows Rails developers to focus on the app. It's
+intentionally restrictive to stop us from putzing with template code,
+creating tiny differences from app to app and causing headaches for us
+when things need to change. 
 
-Add this line to your application's Gemfile:
+Installation
+------------
 
+1. Add this line to your application's Gemfile:
+
+    ```
     gem 'umn_bootstrap_rails', :git => 'git@github.umn.edu:asrweb/umn_bootstrap_rails'
+    ```
 
-And then execute:
+2. Then execute:
 
+    ```
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install umn_bootstrap_rails
-
-## Usage
-
-1. Add to your `app/assets/stylesheets/application.css` file:
-
-    ```
-    *= require umn_bootstrap
     ```
 
-2. Add to your `app/assets/javascripts/application.js` file:
+3. Run the UMN boostrap install generator:
 
     ```
-    //= require umn_bootstrap
+    $ rails g umn_bootstrap_rails:install
     ```
 
-3. Run the `twitter-bootstrap-rails` generator:
+Usage
+-----
 
-    ```
-    rails generate bootstrap:install less
-    ```
+Specify a layout in `app/controllers/application_controller.rb`:
 
-4. Choose a layout in `app/controllers/application_controller.rb`:
-
-    ```ruby
     layout 'umn_bootstrap-fluid-sidenav'
-    ```
 
-    Other layouts:
+Other layouts:
 
-    ```
-    umn_bootstrap-fixed-sidenav
-    ```
+- `umn_bootstrap-fixed-sidenav`
 
-5. Supply some partials for your app layout
+Edit the partials installed into `app/views/shared/umn_bootstrap` as
+needed. For example, you'll want to
 
-## Headers, footers, and other layout partials
+- give your app a title in `_application_header.html.erb`
+- set a custom contact email address (PLEASE DO!) in `_contact.html.erb`
+- supply navigation markup in `_navigation.html.erb`
+- Set a last modified date or a app version number in
+  `_version.html.erb`
 
-- TODO: how to include app header & other partials that the
-  umn_bootstrap layout may use.
-
-## Contributing
+Contributing
+------------
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
