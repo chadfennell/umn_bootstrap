@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = UmnBootstrapRails::VERSION
   gem.authors       = ["Chris Dinger"]
   gem.email         = ["ding0057@umn.edu"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{A set of University of Minnesota web templates for your Rails apps implemented using the Twitter Bootstrap UI framework.}
+  gem.summary       = %q{A set of University of Minnesota web templates for your Rails apps implemented using the Twitter Bootstrap UI framework.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
