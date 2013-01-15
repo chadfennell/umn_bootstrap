@@ -8,7 +8,7 @@ module UmnBootstrapRails
 
       # Run the twitter-bootstrap-rails installer
       def install_bootstrap
-        generate 'bootstrap:install', 'less'
+        generate 'bootstrap:install', 'static'
       end
 
       def install_partials
