@@ -8,7 +8,7 @@ Why this exists
 ---------------
 
 The goal of UMN Bootstrap is to implement the University of Minnesota
-tempalte using Twitter Bootstrap elements and markup. Doing so not only provides
+template using Twitter Bootstrap elements and markup. Doing so not only provides
 consistency between application style and header/footer style, but gives
 us access to a fantastic toolbox of well-thought-out layouts, grid
 system, and attractive UI elements. As responsible developers, let's stop
