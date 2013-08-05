@@ -1,3 +1,3 @@
 module UmnBootstrapRails
-  VERSION = "0.0.2"
+  VERSION = "2.2.7"
 end
