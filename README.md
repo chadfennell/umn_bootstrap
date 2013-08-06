@@ -51,6 +51,8 @@ Specify a layout in `app/controllers/application_controller.rb`:
 Other layouts:
 
 - `umn_bootstrap-fixed-sidenav`
+- `umn_bootstrap-fixed` (no navigation)
+- `umn_bootstrap-fluid` (no navigation)
 
 Edit the partials installed into `app/views/shared/umn_bootstrap` as
 needed. For example, you'll want to
