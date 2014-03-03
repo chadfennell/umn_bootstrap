@@ -19,6 +19,6 @@ Gem::Specification.new do |gem|
 
   # Dependencies
   # gem.add_runtime_dependency "therubyracer"
-  # gem.add_runtime_dependency "less-rails"
-  gem.add_runtime_dependency "twitter-bootstrap-rails", "2.2.7"
+  gem.add_runtime_dependency "less-rails"
+  gem.add_runtime_dependency "twitter-bootstrap-rails", "2.2.8"
 end

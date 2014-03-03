@@ -22,6 +22,10 @@ module UmnBootstrapRails
       def install_javascripts
         directory 'javascripts', 'app/assets/javascripts'
       end
+
+      def install_initializers
+        directory 'install_initializers', 'config/initializers'
+      end
     end
   end
 end

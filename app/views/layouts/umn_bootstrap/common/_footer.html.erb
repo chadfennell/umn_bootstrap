@@ -1,19 +1,25 @@
-<footer class="umn-bootstrap">
-  <div class="umn-links">
-    <p><%= render :partial => 'shared/umn_bootstrap/contact' %></p>
-    <ul>
-      <li>Twin Cities:</li>
-      <li><a href="http://www1.umn.edu/pts/">Parking &amp; Transportation</a></li>
-      <li><a href="http://www.umn.edu/twincities/maps/index.html">Maps &amp; Directions</a></li>
-      <li><a href="http://www.directory.umn.edu/">Directories</a></li>
-      <li><a href="http://www.umn.edu/">U of MN</a></li>
-      <li><a href="http://www1.umn.edu/twincities/privacy/">Privacy</a></li>
+<!-- BEGIN UofM FOOTER -->
+<div id="umnhf-f" class="umnhf">
+  <div id="umnhf-f-cl" class="umnhf">
+    <h2 class="umnhf">Twin Cities Campus:</h2>
+    <ul class="umnhf">
+      <li class="umnhf"><a class="umnhf" href="http://www.umn.edu/twincities/maps/index.html">Maps&nbsp;&amp;&nbsp;Directions</a></li>
+      <li class="umnhf"><a class="umnhf" href="http://www1.umn.edu/pts/">Parking&nbsp;&amp;&nbsp;Transportation</a></li>
+      <li class="umnhf"><a class="umnhf" href="http://www.umn.edu/twincities/contact/">Contact&nbsp;U&nbsp;of&nbsp;M</a></li>
+      <li class="umnhf"><a class="umnhf" href="http://www1.umn.edu/twincities/privacy/">Privacy</a></li>
+      <li class="umnhf"><a class="umnhf" href="http://www.directory.umn.edu/">Directories</a></li>
     </ul>
   </div>
-  <p class="umn-copyright">
-    &copy; 2012 Regents of the University of Minnesota. All rights reserved.<br />
-    The University of Minnesota is an equal opportunity educator and employer.<br />
-    <%= render :partial => 'shared/umn_bootstrap/version' %>
-  </p>
-</footer>
+  <div id="umnhf-f-bp" class="umnhf">
+    <!--  Boilerplate language. Spans in second list item control appearance
+          in reduced mobile version. Yes, we know it's ugly. -->
+    <ul class="umnhf">
+      <li class="umnhf">&copy; <%=Time.now.year%> Regents of the University of Minnesota. All rights reserved.</li>
+      <li class="umnhf"><span class="umnhf" id="umnhf-f-fs1">The University of Minnesota is an </span><span class="umnhf" id="umnhf-f-fs2">equal</span> opportunity educator and employer. <span class="umnhf" id="umnhf-f-fs3"><a href="http://www1.umn.edu/twincities/privacy/">Privacy</a></span></li>
+      <li class="umnhf" id="umnhf-f-moddate">Last modified on <%=DateTime.strptime(GIT_COMMIT_TIMESTAMP.to_s,'%s')%></li>
+      <li><%=GIT_BRANCH%><%=GIT_COMMIT%>@<%= Rails.env %></li>
 
+    </ul>
+  </div>
+</div>
+<!-- END UofM FOOTER -->
