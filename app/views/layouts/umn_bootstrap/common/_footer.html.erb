@@ -17,7 +17,7 @@
       <li class="umnhf">&copy; <%=Time.now.year%> Regents of the University of Minnesota. All rights reserved.</li>
       <li class="umnhf"><span class="umnhf" id="umnhf-f-fs1">The University of Minnesota is an </span><span class="umnhf" id="umnhf-f-fs2">equal</span> opportunity educator and employer. <span class="umnhf" id="umnhf-f-fs3"><a href="http://www1.umn.edu/twincities/privacy/">Privacy</a></span></li>
       <li class="umnhf" id="umnhf-f-moddate">Last modified on <%=DateTime.strptime(GIT_COMMIT_TIMESTAMP.to_s,'%s')%></li>
-      <li><%=GIT_BRANCH%><%=GIT_COMMIT%>@<%= Rails.env %></li>
+      <li><%= render :partial => 'shared/umn_bootstrap/version' %></li>
 
     </ul>
   </div>

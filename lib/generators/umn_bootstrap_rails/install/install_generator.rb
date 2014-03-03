@@ -24,7 +24,7 @@ module UmnBootstrapRails
       end
 
       def install_initializers
-        directory 'install_initializers', 'config/initializers'
+        directory 'initializers', 'config/initializers'
       end
     end
   end
